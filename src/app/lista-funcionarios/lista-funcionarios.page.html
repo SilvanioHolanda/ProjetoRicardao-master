@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Chama o Ricardão!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-button id="butao" (click)="cadastrar()" expand="full" shape="round" fill="outline" color="light">
+      Cadastrar Associados
+    </ion-button>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Associados
+    </ion-list-header>
+    <ion-item-group>
+      <ion-item>
+        {{nome1}}
+      </ion-item>
+      <ion-item>
+        {{nome2}}
+      </ion-item>
+      <ion-item>
+        {{nome3}}
+      </ion-item>
+    </ion-item-group>
+  </ion-list>
+
+
+</ion-content>

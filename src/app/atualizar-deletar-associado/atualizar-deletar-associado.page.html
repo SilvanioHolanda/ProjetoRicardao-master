@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button id="menu" menu="MenuRicardao"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Chama o Ricardão!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h1>Editar Associado</h1>
+
+  <ion-list>
+    <ion-item>
+      <ion-label class="label">Nome:</ion-label>
+      <ion-input class="label" [(ngModel)]="associado.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Sexo:</ion-label>
+      <ion-radio-group name="auto" [(ngModel)]="associado.sexo">
+        <ion-item>
+          <ion-label class="label">Masculino</ion-label>
+          <ion-radio value="Masculino"></ion-radio>
+        </ion-item>
+        <ion-item>
+          <ion-label class="label">Meninx</ion-label>
+          <ion-radio value="Feminino"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Função:</ion-label>
+      <ion-input class="label" [(ngModel)]="associado.funcao"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Horario:</ion-label>
+      <ion-input class="label" [(ngModel)]="associado.horario"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label class="label">Descrição:</ion-label>
+      <ion-input class="label" [(ngModel)]="associado.descricao"></ion-input>
+    </ion-item>
+    <div id="fotoDiv" (click)="tiraFoto()">
+      <ion-img id="foto" [src]="foto"></ion-img>
+    </div>
+  </ion-list>
+
+  <ion-button expand="full" shape="round" color="warning" (click)="editarAssociado()">
+    Editar
+  </ion-button>
+</ion-content>

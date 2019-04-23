@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button id="menu" menu="MenuRicardao"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Chama o Ricardão!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <h3>Lista de Associados Cadastrados</h3>
+  <h4 *ngIf="associados.length == 0">Nenhum Associado Cadastrado!</h4>
+
+  <ion-list *ngFor="let item of associados">
+    <ion-item-sliding>
+      <ion-item>
+        <ion-avatar><img src="{{item.imagem}}"></ion-avatar>
+        <ion-label id="label">{{item.nome}}</ion-label>
+      </ion-item>
+      <ion-item-options side="end">
+        <ion-item-option color="warning" (click)="editar(item.id)">Editar</ion-item-option>
+        <ion-item-option color="danger" (click)="deletarAssociado(item.id)">Excluir</ion-item-option>
+      </ion-item-options>
+    </ion-item-sliding>
+  </ion-list>
+
+</ion-content>

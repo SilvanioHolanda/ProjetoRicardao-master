@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button id="menu" menu="MenuRicardao"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Chama o Ricardão!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h1>Cadastrar Associado</h1>
+
+  <form [formGroup]="formulario">
+    <ion-list>
+      <ion-item>
+        <ion-label class="label">Nome:</ion-label>
+        <ion-input class="label" formControlName="nome"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="label">Sexo:</ion-label>
+        <ion-radio-group name="auto" formControlName="sexo">
+          <ion-item>
+            <ion-radio value="Masculino"></ion-radio>
+            <ion-label class="label">Masculino</ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-radio value="Feminino"></ion-radio>
+            <ion-label class="label">Meninx</ion-label>
+          </ion-item>
+        </ion-radio-group>
+      </ion-item>
+      <ion-item>
+        <ion-label class="label">Função:</ion-label>
+        <ion-input class="label" formControlName="funcao"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="label">Horario:</ion-label>
+        <ion-input class="label" formControlName="horario"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label class="label">Descrição:</ion-label>
+        <ion-input class="label" formControlName="descricao"></ion-input>
+      </ion-item>
+      <div id="fotoDiv" (click)="tiraFoto()">
+        <ion-img id="foto" [src]="foto"></ion-img>
+      </div>
+    </ion-list>
+  </form>
+
+  <ion-button expand="full" shape="round" (click)="SalvarAssociado()">
+    Cadastrar
+  </ion-button>
+</ion-content>

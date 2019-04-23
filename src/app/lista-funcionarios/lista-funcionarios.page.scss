@@ -1,0 +1,28 @@
+ion-content,ion-toolbar{
+    --background: linear-gradient(to right, rgb(245, 169, 47), rgba(255, 0, 119, 0.753) );
+}
+
+ion-list {
+    --ion-item-background: rgba(255, 255, 255, 0.0);
+}
+
+ion-item {
+    --ion-item-background: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+ion-list-header{
+    color: white;
+    font-size: 200%;
+}
+
+#butao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-title{
+color: white;
+}
+

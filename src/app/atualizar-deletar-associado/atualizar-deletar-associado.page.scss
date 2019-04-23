@@ -1,0 +1,35 @@
+ion-content{
+    --background: #f7f7f7;
+}
+
+ion-toolbar{
+    --background: rgb(230, 230, 230);
+}
+
+ion-title{
+    color: black;
+}
+
+ion-list {
+    --ion-item-background: rgba(255, 255, 255, 0.0);
+}
+
+.label {
+    color: black;
+}
+
+h1{
+    text-align: center;
+    color: black;
+}
+
+#fotoDiv{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#foto{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin:auto;
+} 

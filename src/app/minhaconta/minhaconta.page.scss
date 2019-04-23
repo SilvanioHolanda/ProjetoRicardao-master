@@ -1,0 +1,31 @@
+ion-content{
+    --background: #f7f7f7;
+}
+
+ion-toolbar{
+    --background: rgb(230, 230, 230);
+}
+
+ion-title{
+    color: black;
+}
+
+ion-list {
+    --ion-item-background: rgba(255, 255, 255, 0.0);
+}
+
+h3{
+    text-align: center;
+}
+
+.label{
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+}
+
+.input{
+    font-size: 20px;
+    color: black;
+    text-transform: uppercase;
+}

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button id="menu" menu="MenuRicardao"></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Chama o Ricardão!</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h3>Minha Conta</h3>
+
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating" class="label">Nome:</ion-label>
+      <ion-input type="email" disabled="true" class="input" [(ngModel)]="usuario.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" class="label">E-mail:</ion-label>
+      <ion-input type="email" disabled="true" class="input" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+  </ion-list>
+</ion-content>
