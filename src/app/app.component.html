@@ -9,26 +9,26 @@
     <ion-content>
       <ion-menu-toggle>
         <ion-list>
-          <ion-item [routerLink]="['/login']">
-            <ion-icon slot="start" name="person"></ion-icon> Login
-          </ion-item>
-          <ion-item [routerLink]="['']">
-            <ion-icon slot="start" name="star"></ion-icon> Favoritos
-          </ion-item>
+            <ion-item [routerLink]="['/lista-funcionarios']">
+              <ion-icon slot="start" name="search"></ion-icon> Catálogo de Associados
+            </ion-item>
+            <ion-item [routerLink]="['/listar-associados']">
+              <ion-icon slot="start" name="list"></ion-icon> Lista dos Associados
+            </ion-item>
+            <ion-item [routerLink]="['/cadastro-funcionario']">
+              <ion-icon slot="start" name="person-add"></ion-icon> Cadastrar Associados
+            </ion-item>
           <ion-item [routerLink]="['']">
             <ion-icon slot="start" name="copy"></ion-icon> Contratos
           </ion-item>
           <ion-item [routerLink]="['/minhaconta']">
             <ion-icon slot="start" name="people"></ion-icon> Minha Conta
           </ion-item>
-          <ion-item [routerLink]="['/lista-funcionarios']">
-            <ion-icon slot="start" name="search"></ion-icon> Catálogo de Associados
+          <ion-item [routerLink]="['']">
+            <ion-icon slot="start" name="star"></ion-icon> Favoritos
           </ion-item>
-          <ion-item [routerLink]="['/cadastro-funcionario']">
-            <ion-icon slot="start" name="person-add"></ion-icon> Cadastrar Associados
-          </ion-item>
-          <ion-item [routerLink]="['/listar-associados']">
-            <ion-icon slot="start" name="list"></ion-icon> Lista dos Associados
+          <ion-item [routerLink]="['/login']">
+            <ion-icon slot="start" name="person"></ion-icon> Login
           </ion-item>
           <ion-item [routerLink]="['/lista-funcionarios']" (click)="sair()">
             <ion-icon slot="start" name="exit"></ion-icon> Sair

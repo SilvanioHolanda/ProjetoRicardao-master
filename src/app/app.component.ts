@@ -20,7 +20,6 @@ export class AppComponent {
 
   sair(){
     AutenticarLoginGuard.acessar = false;
-    //AutenticarLoginGuard.id = "";
   }
 
   initializeApp() {
